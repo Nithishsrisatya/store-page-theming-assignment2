@@ -1,0 +1,33 @@
+:root {
+  --primary: #2563eb;
+  --primary-deep: #1e40af;
+  --primary-mild: #bfdbfe;
+  --background: #ffffff;
+  --text: #1f2937;
+}
+
+.theme-default {
+  --primary: #2563eb;
+  --primary-deep: #1e40af;
+  --primary-mild: #bfdbfe;
+  --background: #ffffff;
+  --text: #1f2937;
+}
+
+.theme-theme1 {
+  --primary: #047857;
+  --primary-deep: #065f46;
+  --primary-mild: #6ee7b7;
+  --background: #f0fdf4;
+  --text: #064e3b;
+}
+
+.theme-theme2 {
+  --primary: #db2777;
+  --primary-deep: #be185d;
+  --primary-mild: #f9a8d4;
+  --background: #fff5f7;
+  --text: #831843;
+}
+
+/* Additional UI element styling for themes can be added here */
