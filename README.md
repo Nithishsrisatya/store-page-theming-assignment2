@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GoGetWell.ai Theme System Implementation Assignment#2
 
 ## Project Overview
@@ -312,3 +313,6 @@ Key Features:
 ### Guide
 Please visit our [Online documentation](https://ecme-react.themenate.net/guide/documentation/introduction) for detailed guides, setup instructions, and customization options.
 
+=======
+# store-page-theming-assignment2
+>>>>>>> 4115a527e4d7ece1601bb912829a7f65c6b0e768
