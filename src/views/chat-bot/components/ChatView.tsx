@@ -8,6 +8,8 @@ import { usGenerativeChatStore } from '../store/generativeChatStore'
 import useChatSend from '../hooks/useChatSend'
 import type { ScrollBarRef } from '@/views/chat-bot/components/ChatBox'
 import { apiGetAllMessage, apiGetAllPublicMessage } from '@/services/MessageService'
+import MessageService from '../../../services/MessageService';
+
 import { AllMessageResponse } from '../types'
 import { generateLLMChatHistory, transformMessages } from '../utils'
 import { useAuth } from '@/auth'
