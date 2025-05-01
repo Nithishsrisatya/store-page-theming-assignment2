@@ -15,7 +15,10 @@ import UploadMedicalReports from '../../../components/shared/UploadMedicalReport
 // Ensure the correct path or remove the import if unused
 import useSWR from 'swr'
 import { Badge } from '../../../components/ui'
-import TextEllipse from '../../../components/ui/TextEllipse'
+// import TextEllipse from '../../../components/ui/TextEllipse'
+//import TextEllipse from '../../../components/ui/TextEllipse'
+// import TextEllipse from '../../../components/ui/TextEllipse'; // Updated path to the correct location
+
 import { useAuthStore } from '../../../components/layouts/AuthLayout/store/useAuthStore'
 // Removed import for useHcfHomeStore as the module could not be found
 // Removed import for useAppointmentListStore as the module could not be found
@@ -163,7 +166,7 @@ const ChatSideNav = ({ className, bodyClass, onClick }: ChatSideNavProps) => {
                                 {
                                     data.slice(0, 1)?.map((data: any, i: number) => (
                                         <div className='flex items-center justify-between w-full' key={i}>
-                                            <TextEllipse maxLength={18} text={data?.doctorName || 'N/A'} className='font-bold capitalize' />
+                                            <span className='font-bold capitalize'>{data?.doctorName?.length > 18 ? `${data?.doctorName.slice(0, 15)}...` : data?.doctorName || 'N/A'}</span>
                                             <Badge
                                                 className={`${data?.status === 'pending'
                                                     ? 'bg-yellow-400'
