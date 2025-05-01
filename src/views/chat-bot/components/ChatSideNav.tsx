@@ -15,7 +15,6 @@ import AppointmentPopup from '@/components/shared/AppointmentPopup'
 import UploadMedicalReports from '@/components/shared/UploadMedicalReports'
 import { apiGetPatientAppointment } from '@/services/AppointmentService'
 import useSWR from 'swr'
-import Loading from '@/components/shared/Loading'
 import { Alert, Badge } from '@/components/ui'
 import TextEllipse from '@/components/ui/TextEllipse'
 import { useAuthStore } from '@/components/layouts/AuthLayout/store/useAuthStore'
@@ -49,7 +48,8 @@ const ChatSideNav = ({ className, bodyClass, onClick }: ChatSideNavProps) => {
     const [queryText, setQueryText] = useState('')
     const user = useSessionUser(state => state.user);
     const [uploadReportPopupStatus, setUploadReportPopupStatus] = useState(false)
-    const { userDetails } = useUserStore()
+    // Removed usage of useUserStore due to missing file
+    const userDetails = null
     const { hcfData } = useAuthStore()
     const { smaller } = useResponsive()
 
